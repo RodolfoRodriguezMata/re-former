@@ -1,9 +1,5 @@
-<% @article.errors.full_messages.each do |error| %>
-  <li><%= error %></li>
-<% end %>
-
 <!--
-<form action="/users" method="post" accept-charset="UTF-8">
+<form action="/users" method="put" accept-charset="UTF-8">
   <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
   
   <label for="username">Choose an username:</label>
@@ -15,7 +11,7 @@
   <input type="submit" value="Submit">
 </form>
 
-<%= form_with(url: "/users", method: "post") do %>
+<%= form_with(url: "/users", method: "put") do %>
   <%= label_tag(:username, "Choose an username:") %>
   <%= text_field_tag(:username) %>
   <%= label_tag(:email, "Provide your email:") %>

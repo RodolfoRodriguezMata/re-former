@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
-  resource :users, only: [:new, :create]
+  resource :users, only: [:new, :create, :edit, :update]
 
 end
