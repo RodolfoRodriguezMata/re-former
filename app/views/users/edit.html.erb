@@ -1,3 +1,7 @@
+<% @user.errors.full_messages.each do |error| %>
+  <li><%= error %></li>
+<% end %>
+
 <!--
 <form action="/users" method="put" accept-charset="UTF-8">
   <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
